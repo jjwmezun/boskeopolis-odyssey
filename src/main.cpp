@@ -4,6 +4,7 @@
 #include "game_state_machine.hpp"
 #include "input.hpp"
 #include "render.hpp"
+#include "unit.hpp"
 
 static constexpr int DT = 17;
 
@@ -13,7 +14,7 @@ static int accumulator = 0;
 
 int main( int argc, char * * argv )
 {
-    if ( !Engine::init() || !Render::init( "Boskeopolis Odyssey" ) )
+    if ( !Engine::init() || !Render::init( "Boskeopolis Odyssey", Unit::WINDOW_WIDTH_PIXELS, Unit::WINDOW_HEIGHT_PIXELS ) )
     {
         printf( "¡Error! Failed to initialize game!\n" );
         return -1;

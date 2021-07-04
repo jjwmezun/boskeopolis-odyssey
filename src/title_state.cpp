@@ -11,7 +11,6 @@ void TitleState::init()
 
 void TitleState::update()
 {
-    printf( "We’re on the title screen.\n" );
     if ( Input::pressedConfirm() )
     {
         GameStateMachine::changeState( new OverworldState() );

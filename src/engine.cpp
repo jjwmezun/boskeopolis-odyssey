@@ -8,7 +8,12 @@ namespace Engine
 {
     static std::unordered_map<SDL_Keycode, Input::Action> actions_ =
     {
-        { SDLK_z, Input::Action::CONFIRM }
+        { SDLK_z, Input::Action::CONFIRM },
+        { SDLK_x, Input::Action::CANCEL },
+        { SDLK_UP, Input::Action::UP },
+        { SDLK_RIGHT, Input::Action::RIGHT },
+        { SDLK_DOWN, Input::Action::DOWN },
+        { SDLK_LEFT, Input::Action::LEFT }
     };
 
     bool init()

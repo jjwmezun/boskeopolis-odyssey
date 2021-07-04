@@ -6,6 +6,11 @@ namespace Input
     enum class Action
     {
         CONFIRM,
+        CANCEL,
+        UP,
+        RIGHT,
+        DOWN,
+        LEFT,
         __NULL
     };
 
@@ -16,6 +21,10 @@ namespace Input
     void registerKeyRelease( Action action );
 
     bool pressedConfirm();
+    bool heldUp();
+    bool heldRight();
+    bool heldDown();
+    bool heldLeft();
 }
 
 #endif // INPUT_H
